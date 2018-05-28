@@ -14,7 +14,6 @@ contract EBayClone {
     mapping (uint => Product) public products;        
 
     function sellProduct(string _name, string _description, uint _price) public{
-        //require(msg.sender != 0x0);
         
         Product memory newProduct = Product({
             id: productCounter,
